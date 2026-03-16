@@ -23,9 +23,14 @@ def constant_one(x):
 
 def balanced_xor(x):
     """
-    Balanced Boolean function using XOR.
+    Balanced Boolean function using XOR over all bits
     """
-    return x[0] ^ x[1]
+    result = 0
+
+    for bit in x:
+        result ^= bit
+
+    return result
 
 def check_function(f, inputs):
     """

@@ -1,14 +1,14 @@
 def classical_deutsch_jozsa(f, inputs):
     """
-    Classical algorithm to determine whether a Boolean function
-    is constant or balanced.
+    Classical algorithm to determine whether a Boolean
+    function is constant or balanced.
 
     Parameters
     ----------
     f : function
-        Boolean function.
+        Boolean function
     inputs : list
-        List of binary inputs.
+        List of binary inputs
 
     Returns
     -------
@@ -16,16 +16,11 @@ def classical_deutsch_jozsa(f, inputs):
         'constant' or 'balanced'
     """
 
-    outputs = []
+    first_value = f(inputs[0])
 
-    for x in inputs:
+    for x in inputs[1:]:
 
-        y = f(x)
-        outputs.append(y)
-
-        # If we observe different outputs,
-        # the function must be balanced
-        if len(set(outputs)) > 1:
+        if f(x) != first_value:
             return "balanced"
 
     return "constant"
