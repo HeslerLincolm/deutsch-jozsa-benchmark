@@ -1,6 +1,6 @@
 qiskit==2.3.1
 qiskit-aer==0.17.2
-qiskit-ibm-runtime
+qiskit-ibm-runtime==0.20.0
 numpy
 matplotlib
 pylatexenc
