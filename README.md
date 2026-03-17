@@ -2,9 +2,7 @@
 
 ## Overview
 
-This project presents a comparative study between classical and quantum approaches for evaluating Boolean functions, based on the Deutsch–Jozsa algorithm. The objective is to determine whether a given function is **constant** or **balanced**, highlighting the computational advantage offered by quantum algorithms.
-
-The implementation combines classical computation, quantum circuit simulation, and execution on real quantum hardware provided by IBM Quantum.
+This project presents a comparative study between classical and quantum approaches for evaluating Boolean functions, based on the Deutsch–Jozsa algorithm. The objective is to determine whether a given function is **constant** or **balanced**, highlighting the computational advantage offered by quantum algorithms. The implementation combines classical computation, quantum circuit simulation, and execution on real quantum hardware provided by IBM Quantum.
 
 ---
 
@@ -94,17 +92,16 @@ jupyter notebook
 
 Execution on IBM Quantum hardware shows that:
 
-* The dominant measurement corresponds to the correct classification
-* Additional states appear due to noise and hardware imperfections
-* Results are probabilistic rather than perfectly deterministic
+* The dominant measurement corresponds to the correct classification.
+* Additional states appear due to noise and hardware imperfections.
+* Results are probabilistic rather than perfectly deterministic.
 
 ---
 
 ## Limitations
 
-* Noise and decoherence affect real quantum results
-* Limited number of qubits in current hardware
-* Circuit depth impacts accuracy
+* Noise and decoherence affect real quantum results.
+* Limited number of qubits in current hardware.
 
 ---
 
